@@ -1,0 +1,10 @@
+def twoSum(self, nums: List[int], target: int) -> List[int]:
+        d=dict()
+        for i in range(0,len(nums)):
+            val=target-nums[i]
+            
+            if(val in d):
+                return [i,d[val]]
+            d[nums[i]]=i
+Time Complexity is O(n)
+Space complexity is O(n)
